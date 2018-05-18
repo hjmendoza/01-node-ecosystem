@@ -1,9 +1,5 @@
-function greet(name) {
-  if(typeof name !== 'string'){
-    return null;
-  }
+function greet() {
+  return null;
+};
 
-  return `hello ${name}`;
-}
-
-module.exports = greet;
+module.exports = greet; 
