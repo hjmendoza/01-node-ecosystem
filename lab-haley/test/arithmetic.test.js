@@ -1,14 +1,12 @@
-// const arithmetic = require('../lib/arithmetic.js');
+const arithmetic = require('../lib/arithmetic.js');
 
-// describe('greet module', () => {
+describe('arithmetic module', () => {
+  
+  it('should return null if either argument is a non-number', () => {
+    expect(arithmetic.add()).toBeNull();
+  });
 
-//   xit('should return null when passed non string', () => {
-//     expect(greet()).toBeNull();
-//   })
-
-//   xit('should return "hello world" when passed world', () => {
-//     let expected = 'hello world';
-//     let actual = greet('world')
-//     expect(actual).toBe(expected);
-//   })
-// })
+  it('should return the sum of both numbers when passed numbers', () => {
+    expect(arithmetic.add(1, 2)).toEqual(3);
+  });
+});
