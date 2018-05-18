@@ -6,11 +6,7 @@ describe('greet module', () => {
     expect(greet()).toBeNull();
   })
 
-  xit('should return "hello world" when passed world', () => {
-    let expected = 'hello world';
-
-    let actual = greet('world');
-
-    expect(actual).toBe(expected);
+  it('should return "hello world" when passed world', () => {
+    expect(greet('world')).toBe('hello world');
   })
 })
